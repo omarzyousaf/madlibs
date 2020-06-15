@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %} Madlibs App {% endblock %}
+{% block content %}
+<h1>Madlibs App</h1>
+<p>Fill out the blank form below:</p>
+<form action='/story'>
+    {% for question in questions %}
+    <p>{{question}}:
+        <input type='text' name={{question}}>
+    </p>
+    {% endfor %}
+    <button type="submit">Submit!</button>
+    {% endblock %}
+
+
+    <!-- 
+
+        <label>Place: </label>
+        <input type='text' placeholder="enter a place here" name="place">
+        <br>
+        <br>
+        <label>Noun: </label>
+        <input type='text' placeholder="enter a nounce here" name="noun">
+        <br>
+        <br>
+        <label>Verb: </label>
+        <input type='text' placeholder="enter a verb here" name="verb">
+        <br>
+        <br>
+        <label>Adjective: </label>
+        <input type='text' placeholder="enter an adj here" name="adjective">
+        <br>
+        <br>
+        <label>Plural Noun: </label>
+        <input type='text' placeholder="enter a plural here" name="plural_noun">
+        <br>
+        <br>
+         -->

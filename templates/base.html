@@ -9,17 +9,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Story</title>
-    </title>
+    <title>{% block title %} {% endblock %}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
 </head>
 
 <body>
-    <h1>Here is your story: </h1>
-    <p>Once upon a time in a long-ago {{place}}, there lived a
-        large {{adjective}} {{noun}}. It loved to {{verb}} {{plural_noun}}.</p>
+    {% block content %} {% endblock %}
 
     <script src="" async defer></script>
 </body>

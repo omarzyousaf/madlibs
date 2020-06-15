@@ -37,6 +37,12 @@ class Story:
 
 # Here's a story to get you started
 
+# story_1 = """Once upon a time in a long-ago {place}, there lived a
+#        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+
+# story_2 = """Last week, we were at a {place}, and ran into a huge, {adjective} {noun}. We had to {verb} {plural_noun}."""
+
+# stories = [story_1, story_2]
 
 story = Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
